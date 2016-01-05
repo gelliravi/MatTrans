@@ -109,17 +109,12 @@ nb=size(casedata.bus,1);
 mpc.gen_components_Mainselector.AVR=ones(1,nb)';
 mpc.gen_components_Mainselector.AVR([93,104,105,106,110,111])=0;
 
-% AVR=zeros(1,nb)'; % To be addressed
-
 % ---------------------Main Selector for Turbine models---------------
 %TURB = 1's (DISABLED); =0's (ENABLED)
-% TURB=ones(1,nb)'; % To be Addressed
 mpc.gen_components_Mainselector.TURB=ones(1,nb)'; % Turbine enabled for all buses
-% mpc.gen_components_Mainselector.TURB(4)=1; % Turbine of gen connected to bus 4 has no primemover -- Condenser
 
 %---Main Selector for PSS----
 %PSS = 1's (DISABLED); =0's (ENABLED)
-% PSS=ones(1,nb)'; % To be addressed
 mpc.gen_components_Mainselector.PSS=ones(1,nb)';
 
 																					

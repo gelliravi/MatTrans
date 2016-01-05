@@ -1,7 +1,7 @@
 function mpc = dynamicdata
 % function dynamicdata
 %dynamicdata is the generalized data that can be assigned to any machine.
-%   This data has to be specific to a specific to a case network, which is
+%   This data has to be specific to a case network, which is
 %   handled in dynamicdatacaseX.m
 %
 %   Based on data from ...

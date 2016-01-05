@@ -75,17 +75,14 @@ output.gen_components=	 [
 %AVR = 1's (DISABLED); =0's (ENABLED)
 nb=size(casedata.bus,1);
 output.gen_components_Mainselector.AVR=zeros(1,nb)';
-% AVR=zeros(1,nb)'; % To be addressed
 
 % ---------------------Main Selector for Turbine models---------------
 %TURB = 1's (DISABLED); =0's (ENABLED)
-% TURB=ones(1,nb)'; % To be Addressed
 output.gen_components_Mainselector.TURB=zeros(1,nb)'; % Turbine enabled for all buses
 output.gen_components_Mainselector.TURB(4)=1; % Turbine of gen connected bus 4 has no primemover -- Condenser
 
 %---Main Selector for PSS----
 %PSS = 1's (DISABLED); =0's (ENABLED)
-% PSS=ones(1,nb)'; % To be addressed
 output.gen_components_Mainselector.PSS=zeros(1,nb)';
 
 																					
