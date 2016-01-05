@@ -43,15 +43,15 @@ Please see the LICENSE file for the details. But here is the summary:
 
 - While not required by the terms of the license, we do request the MATTRANS to cite as:
 
-------- cite.bib file ------
-	@misc{ref:link:gelliMatTrans,
-	author = {Gelli Ravikumar},
-	title = "{MATTRANS: A MATLAB Power System Transient stability Simulation Package}",
-	url="{https://github.com/gelliravi/MatTrans}", 
-	month = {Jan},
-	year = {2016},
-	}
-------- EOL: cite.bib file ------
+        ------- cite.bib file ------
+        @misc{ref:link:gelliMatTrans,
+        author = {Gelli Ravikumar},
+        title = "{MATTRANS: A MATLAB Power System Transient stability Simulation Package}",
+        url="{https://github.com/gelliravi/MatTrans}", 
+        month = {Jan},
+        year = {2016},
+        }
+        ------- EOL: cite.bib file ------
 
 
 -----------------
