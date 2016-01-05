@@ -11,12 +11,6 @@ display('If NO action to be taken, PRESS ENTER for every prompt.')
 Tfault=input('Fault initiation time (s), Tfault= ');
 Tclear=input('Fault Duration,(s) Tclear= ');
 fbus=input('Faulted Bus: ');
-%     fprintf(fd, '\n================================================================================');
-%     fprintf(fd, '\n| Lines Connected to the Faulted Bus choose the lines to be tripped from its index |');
-%     fprintf(fd, '\n================================================================================');
-%     fprintf(fd, '\n\nLine index             from bus         to bus');
-%     fprintf(fd, '\n------------------    ---------------   ----------- ');
-%     fprintf(fd, '\n         %6d     Total Gen Capacity   %7.1f       %7.1f to %.1f', nb, sum(gen(allg, PMAX)), sum(gen(allg, QMIN)), sum(gen(allg, QMAX)));
 if fbus
 fbusConnectedLines = [find(nt(:,1)==fbus) nt(find(nt(:,1)==fbus),1:2); find(nt(:,2)==fbus) nt(find(nt(:,2)==fbus),1:2)];
 fprintf('========================================');
