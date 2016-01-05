@@ -88,8 +88,10 @@ type:
 
     runts(data.case10, data.case10dd)
     % all case files are placed in the data folder. Hence, it is needed to use data prefix to find the folder.
-    % data.case10 - It is a .m file, which has steady-state network data and the format is same as MATPOWER case format.
-    % data.case10dd - It is a .m file, which has dynamic-data of the above network and the format is defined as MATTRANS casedd format.
+    % data.case10 - It is a .m file, which has steady-state network data and the format is same as MATPOWER 
+    case format.
+    % data.case10dd - It is a .m file, which has dynamic-data of the above network and the format is defined 
+    as MATTRANS casedd format.
     % While execution it prompts the user to enter some inputs, which are:
         If NO action to be taken, PRESS ENTER for every prompt. Or else the following values can be tried.
         Fault initiation time (s), Tfault= 0.5
