@@ -1,11 +1,6 @@
 function mpc = case10
-%CASE26    Power flow data for 26 bus, 6 generator case.
+%CASE10    Power flow data for 10 bus, 4 generator case.
 %   Please see CASEFORMAT for details on the case file format.
-%
-%   Based on data from Power System Analysis. Hadi Saadat's book, p. 254-256.
-
-%   MATPOWER
-%   $Id: case26.m,v 1.0 2014/08/15 10:00:00 Gelli Exp $
 
 %% MATPOWER Case Format : Version 2
 mpc.version = '2';
