@@ -28,7 +28,7 @@ researchers and educators that is easy to use and modify. MATTRANS
 is designed to give the best performance possible while keeping the code
 simple to understand and modify. It was initially developed in 2008 and the files can be found at: <https://www.ee.iitb.ac.in/~anil/download/Transient_Stability_Programs/>. The MATTRANS has been developed on the basis of these files and tried to follow the DRY (Dont Repeat Yourself) coding principle as much as possible.
 The MATTRANS project has been initiated for the research project of "A comparative assessment of PMU Data based Catastrophic Indicators for Power System Stability Assessment". Currently, the paper is under the review process.
-The MATPOWER (<http://www.pserc.cornell.edu/matpower/>) coding design principles has been inspired to develop the MATTRANS, which uses MATPOWER package to execute the steady-state power flow.
+The MATPOWER (<http://www.pserc.cornell.edu/matpower/>) coding design principles has been inspired to develop the MATTRANS, which inherently uses MATPOWER package to execute the steady-state power flow.
 MATTRANS can be downloaded from the <https://github.com/gelliravi/MatTrans/archive/master.zip>
 
 
