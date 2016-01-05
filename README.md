@@ -86,6 +86,7 @@ To run a simple transient stability on the 4 machine 10-bus system specified in 
 file case10.m (steady-state data) and case10dd.m (dynamic data), with the default algorithm options, at the MATLAB prompt,
 type:
 
+    Example 1:
     runts(data.case10, data.case10dd)
     % all case files are placed in the data folder. Hence, it is needed to use data prefix to find the folder.
     % data.case10 - It is a .m file, which has steady-state network data and the format is same as MATPOWER 
@@ -98,6 +99,15 @@ type:
         Fault Duration,(s) Tclear= 0.1
         Faulted Bus: 9
         Line(s) to be tripped, [ , ]= 9
+    
+    Example 2:
+    runts(data.case145, data.case145dd)
+    % While execution it prompts the user to enter some inputs, which are:
+        If NO action to be taken, PRESS ENTER for every prompt. Or else the following values can be tried.
+        Fault initiation time (s), Tfault= 0.5
+        Fault Duration,(s) Tclear= 0.1
+        Faulted Bus: 7
+        Line(s) to be tripped, [ , ]= 16    
         
 
 For additional info:
