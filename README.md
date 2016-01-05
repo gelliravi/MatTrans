@@ -4,7 +4,7 @@ MATTRANS - A MATLAB(R) Power System Transient Stability Simulation Package
 
 Version:    1.0
 
-Authors:    Gelli Ravikumar
+Authors:    Gelli Ravikumar <gravikumar@iitb.ac.in>
             
 Created:    05 Sep 2015
 
