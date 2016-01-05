@@ -1,5 +1,5 @@
 ============================================================================
- MATTRANS - A MATLAB(R) Power System Transient Stability Simulation Package
+MATTRANS - A MATLAB(R) Power System Transient Stability Simulation Package
 ============================================================================
 
 Version:    1.0
