@@ -12,8 +12,7 @@ Updated:    05 Jan 2016
 
 $Id: README 05 Sep 2015 Gelli $
 
-Copyright (c) 2015-2016 by Gelli
-See http://tinyurl.com/gelliPapers for more info.
+Copyright (c) 2015-2016 by Gelli, See http://tinyurl.com/gelliPapers for more info.
 
 Copying and distribution of this file, with or without modification,
 are permitted in any medium without royalty provided the copyright
