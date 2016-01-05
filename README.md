@@ -60,10 +60,10 @@ Please see the LICENSE file for the details. But here is the summary:
 
 System Requirements
 -------------------
-    - MATLAB(R) version 15 or later (available from The MathWorks, Inc.
-      http://www.mathworks.com/). The MATTRANS is tested on MATLAB 2015b, hope it may also work with older versions. For any concerns, please  contact: <gravikumar@iitb.ac.in>
 
-    - MATPOWER (<http://www.pserc.cornell.edu/matpower/>), which is needed to execute the steady-state power flow.
+- MATLAB(R) version 15 or later (available from The MathWorks, Inc. (http://www.mathworks.com/). The MATTRANS is tested on MATLAB 2015b, hope it may also work with older versions. For any concerns, please  contact: <gravikumar@iitb.ac.in>.
+
+- MATPOWER (<http://www.pserc.cornell.edu/matpower/>), which is needed to execute the steady-state power flow.
 
 Installation
 ------------
@@ -75,20 +75,28 @@ Installation
     own code. Let $MATTRANS denote the path to this directory.
 
 3.  Add the following directories to your MATLAB path:
-      $MATTRANS   - all MATTRANS functions
-      $MATTRANS/src - core MATTRANS files
+
+    - $MATTRANS   - all MATTRANS functions
+    - $MATTRANS/src - core MATTRANS files
 
 
-Running MATPOWER
+Running MATTRANS
 ----------------
-To run a simple Newton power flow on the 9-bus system specified in the
-file case9.m, with the default algorithm options, at the MATLAB prompt,
+To run a simple transient stability on the 4 machine 10-bus system specified in the
+file case10.m (steady-state data) and case10dd.m (dynamic data), with the default algorithm options, at the MATLAB prompt,
 type:
 
     runts(data.case10, data.case10dd)
     % all case files are placed in the data folder. Hence, it is needed to use data prefix to find the folder.
     % data.case10 - It is a .m file, which has steady-state network data and the format is same as MATPOWER case format.
-	% data.case10dd - It is a .m file, which has dynamic-data of the above network and the format is defined as MATTRANS casedd format.
+    % data.case10dd - It is a .m file, which has dynamic-data of the above network and the format is defined as MATTRANS casedd format.
+    % While execution it prompts the user to enter some inputs, which are:
+        If NO action to be taken, PRESS ENTER for every prompt. Or else the following values can be tried.
+        Fault initiation time (s), Tfault= 0.5
+        Fault Duration,(s) Tclear= 0.1
+        Faulted Bus: 9
+        Line(s) to be tripped, [ , ]= 9
+        
 
 For additional info:
    - help runts
@@ -102,7 +110,7 @@ Below is a summary of the 1.0 of MATTRANS. See the
 CHANGES file in the docs directory for all the gory details.
 
 * New features:
-  - Execution of Transient stability program, which is use both coding and simulation environment of MATLAB.
+  - Execution of Transient stability program, which uses both coding and simulation environment of MATLAB.
 
 
 ---------------
@@ -116,7 +124,7 @@ However, MATLAB's 'help' command can be used for the functionality of MATTRANS c
  ACKNOWLEDGEMENT
 ----------------
 
- - The thanks are due to the base version developers of the transient stability program available in its native format at: <https://www.ee.iitb.ac.in/~anil/download/Transient_Stability_Programs/>
+ - The thanks are due to the base version developers of the transient stability program that is available in its native format at: <https://www.ee.iitb.ac.in/~anil/download/Transient_Stability_Programs/>
 
  - The thanks are due to the MATPOWER developers and all the users of MATPOWER community.
 
