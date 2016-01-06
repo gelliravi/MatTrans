@@ -2,7 +2,7 @@ function output = runtsSimulink(mpc)
 
 %% Get matlab version
 matlabVersion=ver('simulink');
-sys = strcat('transientStability_',upper(matlabVersion.Release(2:end-1)),'.mdl');
+sys = strcat('transientStability_',upper(matlabVersion.Release(2:end-1)));
 open_system(sys);
 options = simset('SrcWorkspace','current', 'OutputPoints', 'specified');
 simResult = sim(sys,[],options);
