@@ -1,6 +1,6 @@
-============================================================================
-MATTRANS - A MATLAB(R) Power System Transient Stability Simulation Package
-============================================================================
+===================================================================================
+MATTRANS - A MATLAB(R)/Simulink Power System Transient Stability Simulation Package
+===================================================================================
 
 Version:    1.0
 
@@ -61,7 +61,7 @@ Please see the LICENSE file for the details. But here is the summary:
 System Requirements
 -------------------
 
-- MATLAB(R) version 15 or later (available from The MathWorks, Inc. (http://www.mathworks.com/). The MATTRANS is tested on MATLAB 2015b, hope it may also work with older versions. For any concerns, please  contact: <gravikumar@iitb.ac.in>.
+- MATLAB(R) version 15 or later (available from The MathWorks, Inc. (http://www.mathworks.com/). The MATTRANS is tested on MATLAB R2015b (Simulink 8.6), hope it may also work with older versions. For any concerns, please  contact: <gravikumar@iitb.ac.in>.
 
 - MATPOWER (<http://www.pserc.cornell.edu/matpower/>), which is needed to execute the steady-state power flow.
 
