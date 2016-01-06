@@ -23,7 +23,7 @@ without any warranty.
  INTRODUCTION
 --------------
 
-MATTRANS is a package of MATLAB(R) M-files for solving transient stability. It is intended as a simulation tool for
+MATTRANS is a package of MATLAB(R)/Simulink (M-files and .mdl files) for solving transient stability. It is intended as a simulation tool for
 researchers and educators that is easy to use and modify. MATTRANS
 is designed to give the best performance possible while keeping the code
 simple to understand and modify. It was initially developed in 2008 and the files can be found at: <https://www.ee.iitb.ac.in/~anil/download/Transient_Stability_Programs/>. The MATTRANS has been developed on the basis of these files and tried to follow the DRY (Dont Repeat Yourself) coding principle as much as possible.
