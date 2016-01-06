@@ -10,6 +10,7 @@ import +data.*;
 import +exciter.*;
 import +generator.*;
 import +load.*;
+import +simulinkModels.*;
 import +pss.*;
 import +turbine.*;
 import +utils.*;
@@ -74,6 +75,6 @@ mpc.dynamicdata.Vpre=mpc.dynamicdata.extraVariables.lfl(:,2).*(cos(mpc.dynamicda
 mpc.dynamicdata.Yform = Yform.makeYform(mpc);
 
 %% Executing transientStability.mdl
-mpc.tsResult = utils.runtsSimulink(mpc);
+mpc.tsResult = simulinkModels.runtsSimulink(mpc);
 
 % EOF

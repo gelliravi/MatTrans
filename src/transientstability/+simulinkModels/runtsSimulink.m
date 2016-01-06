@@ -1,10 +1,11 @@
 function output = runtsSimulink(mpc)
 
-transientStability;
-% load('lfl.dat')
+%% Get matlab version
+matlabVersion=ver('simulink');
+sys = strcat('transientStability_',upper(matlabVersion.Release(2:end-1)),'.mdl');
+open_system(sys);
 options = simset('SrcWorkspace','current', 'OutputPoints', 'specified');
-simResult = sim('transientStability',[],options);
-
+simResult = sim(sys,[],options);
 
 %% Making the variables into Struct
 variableValues = {w; delta;COI; delta_COI; Efd_var; If_var; Te_out; Tm_out; Vbus; Vs; ...
