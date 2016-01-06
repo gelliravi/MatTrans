@@ -1,0 +1,3 @@
+//>>built
+define("webview/resources/slreportgen_webview/nls/ja-jp/modelinspector",{CodeGeneration:"\u30b3\u30fc\u30c9\u751f\u6210",ParameterAttributes:"\u30d1\u30e9\u30e1\u30fc\u30bf\u30fc\u5c5e\u6027",Documentation:"\u30c9\u30ad\u30e5\u30e1\u30f3\u30c6\u30fc\u30b7\u30e7\u30f3",LoggingAndAccessibility:"\u30ed\u30b0\u3068\u30e6\u30fc\u30b6\u30fc\u88dc\u52a9\u6a5f\u80fd"});
+//# sourceMappingURL=modelinspector.js.map

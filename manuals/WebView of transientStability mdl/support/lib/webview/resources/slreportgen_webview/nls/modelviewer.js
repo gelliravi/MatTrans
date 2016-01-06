@@ -1,0 +1,4 @@
+//>>built
+define("webview/resources/slreportgen_webview/nls/modelviewer",{root:{OpenInNewTab:"Open In New Tab",Open:"Open",searchCurrentAndBelow:"Search current and below...",name:"Name",propertyValue:"Property Value",NoExport:"This system was not exported.",ModelBrowserButtonLabel:"Hide/Show Model Browser",searchResults:"Search Results:",propertyName:"Property Name",ExplorerBarButtonLabel:"Hide/Show Explorer Bar",FitToViewButtonLabel:"Fit to View",maskType:"Mask Type",advancedSearch:"Advanced Search",ViewAll:"View All",
+blockType:"Block Type",MarqueeZoomButtonLabel:"Zoom"},"ja-jp":!0});
+//# sourceMappingURL=modelviewer.js.map
