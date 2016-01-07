@@ -41,7 +41,9 @@ Please see the LICENSE file for the details. But here is the summary:
 - MATTRANS is distributed in the hope that it will be useful, but
   WITHOUT ANY WARRANTY.
 
-- While not required by the terms of the license, we do request the MATTRANS to cite as:
+- While not required by the terms of the license, we do request that
+publications derived from the use of MATTRANS explicitly acknowledge
+that fact by citing as:
 
         ------- cite.bib file ------
         @misc{ref:link:gelliMatTrans,
@@ -53,7 +55,6 @@ Please see the LICENSE file for the details. But here is the summary:
         }
         ------- EOL: cite.bib file ------
 
-
 -----------------
  GETTING STARTED
 -----------------
@@ -61,7 +62,7 @@ Please see the LICENSE file for the details. But here is the summary:
 System Requirements
 -------------------
 
-- MATLAB(R) version 15 or later (available from The MathWorks, Inc. (http://www.mathworks.com/). The MATTRANS is tested on MATLAB R2015b (Simulink 8.6), hope it may also work with older versions. For any concerns, please  contact: <gravikumar@iitb.ac.in>.
+- MATLAB(R) version 15 or later (available from The MathWorks, Inc. (http://www.mathworks.com/). The MATTRANS is tested on MATLAB R2015b (Simulink 8.6). However, various compatible formats of the Simulink models for the main transientStability.mdl have been exported. The codes automatically detects your Matlab(R)/Simulink version and automatically uses the concerned Simulink model file. Hope this resolves the crucial hectic of version compatibility problems. For any concerns, please  contact: <gravikumar@iitb.ac.in>.
 
 - MATPOWER (<http://www.pserc.cornell.edu/matpower/>), which is needed to execute the steady-state power flow.
 
