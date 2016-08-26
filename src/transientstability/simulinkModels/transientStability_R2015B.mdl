@@ -1,5 +1,5 @@
 Model {
-  Name			  "transientStability"
+  Name			  "transientStability_R2015B"
   Version		  8.6
   MdlSubVersion		  0
   SavedCharacterEncoding  "ISO-8859-1"
@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.590"
+    ComputedModelVersion    "1.592"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -52,11 +52,11 @@ Model {
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1338"
 	  Extents		  [1246.0, 600.0]
-	  ZoomFactor		  [1.391727493917275]
-	  Offset		  [31.077551354895149, -162.05944055944056]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  6
@@ -95,9 +95,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "gelli"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Jan 06 17:09:21 2016"
-  RTWModifiedTimeStamp	  373997273
-  ModelVersionFormat	  "1.%<AutoIncrement:590>"
+  LastModifiedDate	  "Fri Aug 26 17:07:14 2016"
+  RTWModifiedTimeStamp	  394131954
+  ModelVersionFormat	  "1.%<AutoIncrement:592>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -141,11 +141,11 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    9
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "transientStability"
+    model_		    "transientStability_R2015B"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "transientStability"
+      Cell		      "transientStability_R2015B"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1664,9 +1664,9 @@ Model {
     }
   }
   System {
-    Name		    "transientStability"
+    Name		    "transientStability_R2015B"
     Location		    [0, 23, 1280, 796]
-    Open		    on
+    Open		    off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    212
     ScreenColor		    "white"
@@ -15517,11 +15517,7 @@ Model {
       Ports		      [1, 1]
       Position		      [725, -15, 805, 15]
       ZOrder		      -7
-      MATLABFcn		      "( mpc.dynamicdata.Yform.Y  * (abs(u(mpc.dynamicdata.extraVariables.nb+1))<mpc.dynamicdata.Yfor"
-      "m.Tfault)  + mpc.dynamicdata.Yform.Yf  * (abs(u(mpc.dynamicdata.extraVariables.nb+1))>=mpc.dynamicdata.Yform.Tfa"
-      "ult & abs(u(mpc.dynamicdata.extraVariables.nb+1)) <(mpc.dynamicdata.Yform.Tfault+mpc.dynamicdata.Yform.Tclear) )"
-      " + mpc.dynamicdata.Yform.Ypf * (abs(u(mpc.dynamicdata.extraVariables.nb+1)) >= (mpc.dynamicdata.Yform.Tfault+mpc"
-      ".dynamicdata.Yform.Tclear) )  ) \\   u(1:mpc.dynamicdata.extraVariables.nb)"
+      MATLABFcn		      "networkSolution(u,mpc)"
       OutputDimensions	      "mpc.dynamicdata.extraVariables.nb"
       OutputSignalType	      "complex"
     }
@@ -27045,7 +27041,7 @@ Model {
       System {
 	Name			"View output in scopes"
 	Location		[0, 23, 1280, 796]
-	Open			off
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
