@@ -28,10 +28,10 @@ if nargin < 5
         if nargin < 3
             mpopt = mpoption;       %% use default options
             if nargin < 2
-                dynamiccasedata = data.case10dd; %% default data file is 'case9.m'
+                dynamiccasedata = data.case10dd; %% default data file is 'case10.m'
                 if nargin < 1
-                casedata = data.case10; %% default data file is 'case9.m'
-                dynamiccasedata = data.case10dd; %% default data file is 'case9.m'
+                casedata = data.case10; %% default data file is 'case10.m'
+                dynamiccasedata = data.case10dd; %% default data file is 'case10dd.m'
                 end
             end
         end
@@ -73,6 +73,7 @@ mpc.dynamicdata.Vpre=mpc.dynamicdata.extraVariables.lfl(:,2).*(cos(mpc.dynamicda
 %% Yform Modeling - prepares w.r.t line trips
 mpc.dynamicdata.Yform = Yform.makeYform(mpc);
 
+% assignin('base','mpc',mpc)
 %% Executing transientStability.mdl
 mpc.tsResult = utils.runtsSimulink(mpc);
 
