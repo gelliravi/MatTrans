@@ -1,7 +1,7 @@
 function mpc = runts(casedata, dynamiccasedata, mpopt, fname, solvedcase)
 %RUNTS  Runs a Transient Stability.
 %   mpc = RUNTS(CASEDATA, MPOPT, FNAME, SOLVEDCASE)
-%
+%   Example 1: runts(data.case10, data.case10dd)
 %   Runs a Transient Stability (First executes power flow then simulate transtability.mdl), optionally
 %   returning a RESULTS struct and SUCCESS flag.
 
